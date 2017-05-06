@@ -105,23 +105,23 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     public void onClickPlus(View view) {
-        harga = harga + 5; //logic tombol >
+        harga = harga + 95000; //logic tombol >
         qty = qty + 1;
         mTextQty.setText(qty + "");
-        mTextHarga.setText("$" + harga);
+        mTextHarga.setText("Rp. " + harga);
     }
 
     public void onClickMin(View view) { //logic button <
         if (harga != 0) {
-            harga = harga - 5;
+            harga = harga - 95000;
             qty = qty - 1;
             mTextQty.setText(qty + "");
-            mTextHarga.setText("$" + harga);
+            mTextHarga.setText("Rp. " + harga);
         } else {
             harga = 0;
             qty = 0;
             mTextQty.setText(qty + "");
-            mTextHarga.setText("$" + harga);
+            mTextHarga.setText("Rp. " + harga);
         }
     }
 
@@ -129,7 +129,7 @@ public class OrderActivity extends AppCompatActivity {
         harga = 0; //logic reset button
         qty = 0;
         mTextNama.setText("");
-        mTextHarga.setText("$" + harga);
+        mTextHarga.setText("Rp. " + harga);
         mTextQty.setText(qty + "");
     }
 

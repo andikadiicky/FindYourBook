@@ -35,7 +35,6 @@
         <activity android:name=".Romance" />
         <activity android:name=".Mystery" />
 
-
     </application>
 
 </manifest>
