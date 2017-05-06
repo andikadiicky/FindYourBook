@@ -53,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.quit: //apabila yg dipilih quit maka ia akan keluar dr apk
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Anda yakin ingin keluar ?"); // memunculkan pilihan
-                builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                builder.setTitle("Are you sure want to quit?"); // memunculkan pilihan
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finish();
                     }
                 });
-                builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
@@ -77,14 +77,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() { //membuat fungsi klik back,maka akan keluar
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Anda yakin ingin keluar ?");
-        builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+        builder.setTitle("Are you sure want to quit?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
             }
         });
-        builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
